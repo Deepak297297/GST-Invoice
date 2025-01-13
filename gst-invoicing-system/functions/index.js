@@ -17,7 +17,7 @@ export const generateGSTInvoice = functions.firestore
 
       try {
         const apiResponse = await axios.get(
-          "https://deepak-assign.vercel.app/api"
+          "https://gst-invoice-taupe.vercel.app/api"
         );
         console.log("GST API Response:", apiResponse.data);
         GST_RATE = apiResponse.data.gstPercentage;
